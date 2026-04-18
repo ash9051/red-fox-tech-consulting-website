@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Red Fox Tech Consulting | Marist University</title>
+  <meta name="description" content="Student Govern tech consulting at Marist University." />
+  <link rel="icon" type="image/png" href="images/logo1.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript/main.js" defer></script>
+</head>
+
+<body id="top">
+  <!-- HEADER / NAVBAR -->
+  <header>
+      
+  <nav aria-label="Primary navigation">
+
+    <!-- Brand (Logo + Name) -->
+    <a class="brand" href="index.html" aria-label="Red Fox Tech Consulting Home">
+      <img src="images/logo-new.png" alt="Red Fox Tech Consulting logo"  />
+      <span></span>
+    </a>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-toggle" type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="primary-menu">
+      ☰
+    </button>
+
+    <!-- WRAP links + actions (this is what your main.js expects) -->
+    <div class="nav-menu" id="primary-menu">
+
+      <!-- Main nav links -->
+      <ul class="nav-links">
+        <li>
+          <details>
+            <summary>Home</summary>
+            <ul>
+              <li><a href="index.html#highlights">Highlights</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>About Us</summary>
+            <ul>
+              <li><a href="whoweare.html#who-we-are">Who We Are</a></li>
+              <li><a href="about.html#leadership">Leadership</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Our Work</summary>
+            <ul>
+              <li><a href="futureprojects.html">Future Projects</a></li>
+              <li><a href="projectsoverview.html">Projects Overview</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Events</summary>
+            <ul>
+              <li><a href="calendar.html">Interactive Calender</a></li>
+              <li><a href="events.html#upcoming">Upcoming Events</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Services</summary>
+            <ul>
+              <li><a href="services.html#what-we-offer">What We Offer</a></li>
+              <li><a href="services.html#clients">Clients</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <a href="apply.html">Join</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+    </div>
+  </nav>
+
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section aria-label="Hero section">
+      <img
+        src="images/home1.jpg"
+        alt="Red Fox Tech Consulting hero image"
+        width="1200"
+        height="600"
+      />
+
+      <div>
+        <h1 class="hero-reveal delay-0">Where Ideas Meet Implementation</h1>
+        <p class="hero-reveal delay-1">Student built… Performance learning… Positive change!</p>
+        <h2 class="hero-school">
+          <a href="https://www.marist.edu/computer-science-math">School of Computer Science and Mathematics</a>
+        </h2>
+
+        <div class="hero-reveal delay-3">
+          <a href="contact.html">Contact</a>
+          <a href="apply.html">Join</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT STRIP -->
+    <section class="home-aboutstrip" aria-label="About Red Fox Tech Consulting">
+      <div class="home-wrap">
+        <p class="home-aboutstrip-text">
+          Our work is free and best-effort, with clear scope and clean handoff, so clients get something usable,
+          and our members build relevant skills. We help local organizations solve real problems with practical skills,
+          impactful solutions, workflow automation, vibrant dashboards, and better system designs.
+        </p>
+
+        <div class="home-aboutstrip-action">
+          <a class="home-aboutstrip-btn" href="about.html">ABOUT US</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPDATES -->
+    <section class="home-updates" aria-label="What we've been up to">
+      <div class="home-wrap">
+        <h2 class="home-updates-title">What We’ve Been Up To…</h2>
+
+        <div class="up-carousel" data-carousel>
+          <button class="up-nav up-prev" type="button" aria-label="Previous">‹</button>
+
+          <div class="up-track" data-track>
+            <article class="up-slide" data-slide>
+              <img src="images/content/ProjectScoping.jpg" alt="Red Fox Tech Consulting update" />
+              <div class="up-caption">
+                <h3>Client Project Scoping</h3>
+              </div>
+            </article>
+
+            <article class="up-slide" data-slide>
+              <img src="images/content/MemberOnboarding.jpg" alt="Red Fox Tech Consulting update" />
+              <div class="up-caption">
+                <h3>Member Onboarding</h3>
+              </div>
+            </article>
+
+            <article class="up-slide" data-slide>
+              <img src="images/content/ConsultingSetup.jpeg" alt="Red Fox Tech Consulting update" />
+              <div class="up-caption">
+                <h3>Consulting Process Setup</h3>
+              </div>
+            </article>
+
+            <article class="up-slide" data-slide>
+              <img src="images/content/ClientSuccess.jpg" alt="Red Fox Tech Consulting update" />
+              <div class="up-caption">
+                <h3>Client sucess story</h3>
+              </div>
+            </article>
+          </div>
+
+          <button class="up-nav up-next" type="button" aria-label="Next">›</button>
+        </div>
+
+        <!-- Optional dots (if you already have CSS for these) -->
+        <div class="up-dots" data-dots aria-label="Carousel navigation">
+          <button class="up-dot is-active" type="button" aria-label="Slide 1"></button>
+          <button class="up-dot" type="button" aria-label="Slide 2"></button>
+          <button class="up-dot" type="button" aria-label="Slide 3"></button>
+          <button class="up-dot" type="button" aria-label="Slide 4"></button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="rfc-footer">
+    <div class="rfc-footer-inner">
+
+      <p class="footer-address">
+        Marist University 3399 North Road Poughkeepsie, NY 12601
+      </p>
+
+      <p class="footer-email">
+        <a href="mailto:redfoxtechsolutions@marist.edu">redfoxtechsolutions@marist.edu</a>
+      </p>
+
+      <h2 class="footer-cta-title">Join us</h2>
+
+      <a class="footer-btn" href="apply.html">GET IN TOUCH</a>
+
+      <div class="footer-social" aria-label="Social links">
+        <a href="#" aria-label="Instagram" class="social-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-2.2a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="LinkedIn" class="social-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.94 6.5A1.94 1.94 0 1 1 3.06 6.5a1.94 1.94 0 0 1 3.88 0zM3.5 21h3V9h-3v12zM9 9h2.9v1.64h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V21h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.78V21H9V9z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

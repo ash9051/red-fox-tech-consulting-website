@@ -1,0 +1,26 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor folders
+.vscode/*
+!.vscode/launch.json
+.idea/
+
+# Logs
+*.log
+
+# Environment and secrets
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Dependency folders, in case the project is converted to Node later
+node_modules/
+dist/
+build/
+

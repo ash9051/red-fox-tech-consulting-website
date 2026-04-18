@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Red Fox Tech Consulting</title>
+  <meta name="description" content="Contact Red Fox Tech Consulting Society at Marist University." />
+  <link rel="icon" type="image/png" href="images/logo1.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER / NAVBAR -->
+   <header>
+  <nav aria-label="Primary navigation">
+
+    <!-- Brand (Logo + Name) -->
+    <a class="brand" href="index.html" aria-label="Red Fox Tech Consulting Home">
+      <img src="images/logo-new.png" alt="Red Fox Tech Consulting logo" width="32" height="32" />
+      <span></span>
+    </a>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-toggle" type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="primary-menu">
+      ☰
+    </button>
+
+    <!-- WRAP links + actions (this is what your main.js expects) -->
+    <div class="nav-menu" id="primary-menu">
+
+      <!-- Main nav links -->
+      <ul class="nav-links">
+        <li>
+          <details>
+            <summary>Home</summary>
+            <ul>
+              <li><a href="index.html#highlights">Highlights</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>About Us</summary>
+            <ul>
+              <li><a href="whoweare.html#who-we-are">Who We Are</a></li>
+              <li><a href="about.html#leadership">Leadership</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Our Work</summary>
+            <ul>
+              <li><a href="futureprojects.html">Future Projects</a></li>
+              <li><a href="projectsoverview.html">Projects Overview</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Events</summary>
+            <ul>
+              <li><a href="calendar.html">Interactive Calender</a></li>
+              <li><a href="events.html#upcoming">Upcoming Events</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Services</summary>
+            <ul>
+              <li><a href="services.html#what-we-offer">What We Offer</a></li>
+              <li><a href="services.html#clients">Clients</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <a href="apply.html">Join</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- MAIN -->
+  <main>
+
+    <section id="contact" class="contact-page" aria-label="Contact page">
+      <div class="contact-wrap">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+          <h1 class="contact-title">Contact</h1>
+          <p class="contact-subtitle">
+            Reach out for consulting requests, collaborations, or speaking opportunities.
+          </p>
+
+          <div class="contact-cards">
+
+            <div class="contact-card">
+              <h3>Email</h3>
+              <a class="contact-email" href="mailto:redfoxtechsolutions@marist.edu">
+                redfoxtechsolutions@marist.edu
+              </a>
+
+              <div class="contact-actions">
+                <button type="button" class="contact-copy" data-copy="redfoxtechconsulting@marist.edu">
+                  Copy
+                </button>
+                <a class="contact-mailto" href="mailto:redfoxtechconsulting@marist.edu">
+                  Open Mail
+                </a>
+              </div>
+
+              <p class="contact-hint">Fastest way to reach us.</p>
+            </div>
+
+            <div class="contact-card">
+              <h3>Location</h3>
+              <p class="contact-lines">
+                Marist University<br>
+                3399 North Road<br>
+                Poughkeepsie, NY 12601
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <h3>What to include</h3>
+              <ul class="contact-list">
+                <li>Your name + organization</li>
+                <li>What you need help with</li>
+                <li>Timeline + constraints</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE (Microsoft Form) -->
+        <div class="contact-right">
+          <div class="contact-form-card">
+            <h2 class="contact-form-title">Send a message</h2>
+            <p class="contact-form-note">
+              Fill out this form and our team will respond within 1–2 business days.
+            </p>
+
+            <div class="ms-form-embed">
+              <iframe
+                src="https://forms.office.com/Pages/ResponsePage.aspx?id=nq-hFIyyJ0uyQyXDPbb_-tXQFwCTtp5KgmO6o0zgJB1UMk1POUZXT0VTN0tSMllXM1JWNlJKUU5ZMy4u"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                allowfullscreen
+                webkitallowfullscreen
+                mozallowfullscreen
+                msallowfullscreen>
+              </iframe>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="rfc-footer">
+    <div class="rfc-footer-inner">
+
+      <p class="footer-address">
+        Marist University 3399 North Road Poughkeepsie, NY 12601
+      </p>
+
+      <p class="footer-email">
+        <a href="mailto:redfoxtechsolutions@marist.edu">redfoxtechsolutions@marist.edu</a>
+      </p>
+
+      <h2 class="footer-cta-title">Join us</h2>
+
+      <a class="footer-btn" href="apply.html">GET IN TOUCH</a>
+
+    </div>
+  </footer>
+
+  <script src="javascript/main.js" defer></script>
+
+</body>
+</html>

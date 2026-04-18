@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Calendar | Red Fox Tech Consulting</title>
+  <meta name="description" content="Browse events by month. Click a date to view details." />
+  <link rel="icon" type="image/png" href="images/logo1.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER / NAVBAR -->
+   <header>
+  <nav aria-label="Primary navigation">
+
+    <!-- Brand (Logo + Name) -->
+    <a class="brand" href="index.html" aria-label="Red Fox Tech Consulting Home">
+      <img src="images/logo-new.png" alt="Red Fox Tech Consulting logo" width="32" height="32" />
+      <span></span>
+    </a>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-toggle" type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="primary-menu">
+      ☰
+    </button>
+
+    <!-- WRAP links + actions (this is what your main.js expects) -->
+    <div class="nav-menu" id="primary-menu">
+
+      <!-- Main nav links -->
+      <ul class="nav-links">
+        <li>
+          <details>
+            <summary>Home</summary>
+            <ul>
+              <li><a href="index.html#highlights">Highlights</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>About Us</summary>
+            <ul>
+              <li><a href="whoweare.html#who-we-are">Who We Are</a></li>
+              <li><a href="about.html#leadership">Leadership</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Our Work</summary>
+            <ul>
+              <li><a href="futureprojects.html">Future Projects</a></li>
+              <li><a href="projectsoverview.html">Projects Overview</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Events</summary>
+            <ul>
+              <li><a href="calendar.html">Interactive Calender</a></li>
+              <li><a href="events.html#upcoming">Upcoming Events</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Services</summary>
+            <ul>
+              <li><a href="services.html#what-we-offer">What We Offer</a></li>
+              <li><a href="services.html#clients">Clients</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <a href="apply.html">Join</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+  <!-- MAIN -->
+  <main id="calendar-page">
+
+    <section class="cal-hero" aria-label="Calendar hero">
+      <div class="cal-wrap">
+        <h1 class="cal-title">Interactive Calendar</h1>
+        <p class="cal-sub">Browse events by month. Click an event date to view details.</p>
+      </div>
+    </section>
+
+    <section class="cal-shell" aria-label="Calendar">
+      <div class="cal-wrap">
+
+        <div class="cal-card" aria-label="Monthly calendar">
+          <div class="cal-toolbar">
+            <button class="cal-nav" id="calPrev" type="button" aria-label="Previous month">‹</button>
+            <div class="cal-label" id="calLabel">Month YYYY</div>
+            <button class="cal-nav" id="calNext" type="button" aria-label="Next month">›</button>
+          </div>
+
+          <div class="cal-dow" aria-label="Days of week">
+            <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+          </div>
+
+          <div class="cal-grid" id="calGrid" aria-label="Calendar days"></div>
+        </div>
+
+        <!-- Popup (renders near clicked date) -->
+        <div class="cal-popover" id="calPopover" hidden>
+          <div class="cal-pop-head">
+            <div class="cal-pop-date" id="calPopDate">Date</div>
+            <button class="cal-pop-close" id="calPopClose" type="button" aria-label="Close">×</button>
+          </div>
+          <div class="cal-pop-body" id="calPopBody"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="rfc-footer">
+    <div class="rfc-footer-inner">
+      <p class="footer-address">Marist University 3399 North Road Poughkeepsie, NY 12601</p>
+      <p class="footer-email">
+        <a href="mailto:redfoxtechconsulting@marist.edu">redfoxtechconsulting@marist.edu</a>
+      </p>
+      <h2 class="footer-cta-title">Join us</h2>
+      <a class="footer-btn" href="apply.html">GET IN TOUCH</a>
+      <div class="footer-social" aria-label="Social links">
+        <a href="#" aria-label="Instagram" class="social-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-2.2a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="social-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.94 6.5A1.94 1.94 0 1 1 3.06 6.5a1.94 1.94 0 0 1 3.88 0zM3.5 21h3V9h-3v12zM9 9h2.9v1.64h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V21h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.78V21H9V9z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="javascript/main.js" defer></script>
+  <script src="javascript/calendar.js" defer></script>
+</body>
+</html>
